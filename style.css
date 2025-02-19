@@ -283,7 +283,7 @@ section {
     .logo-name {
         content: url('images/Logos/head_small.png');
         top: 32px;
-        right: 32px;
+        left: 32px;
     }
 
     .burger-menu {
@@ -316,6 +316,7 @@ section {
     .logo-name {
         content: url('images/Logos/head_small.png');
         top: 32px;
+        left: 32px;
     }
 
     .burger-menu {
@@ -357,6 +358,33 @@ section {
     .recommended__title, .categories__title {
         font-size: xx-large;
         font-weight:400;
+    }
+
+    .logo-name {
+        content: url('images/Logos/head_small.png');
+        top: 16px;
+        left: 16px;
+    }
+
+    .burger-menu {
+        top: 16px;
+        right: 16px;
+    }
+
+    .menu{
+        padding: 16px;
+    }
+
+    .icon-close {
+        top: 16px;
+    }
+
+    .main {
+        padding: 16px;
+    }
+
+    .header {
+        padding: 16px 16px;
     }
 }
 
