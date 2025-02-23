@@ -255,7 +255,7 @@ section {
     }
 
     .logo-name {
-        content: url('images/Logos/head_small.png');
+        content: url('images/Logos/head_small.webp');
         top: 32px;
         left: 32px;
     }

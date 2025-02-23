@@ -1,0 +1,116 @@
+    html {
+        scroll-behavior: smooth; /* Плавний скролінг при навігації по сайту */
+    }
+    
+    body {
+        margin: 0; /* Видаляє зовнішні відступи для всього сайту */
+        font-family: "Inter", sans-serif; /* Встановлює основний шрифт */
+        color: #292929; /* Основний колір тексту */
+        text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1); /* Додає білу тінь навколо тексту */
+    }
+    
+    /* #region categories */
+    /* Стилі для блоку категорій */
+    .categories {
+        max-width: 1020px; /* Обмежує ширину блоку */
+        margin: 0 auto; /* Центрує блок по горизонталі */
+        margin-bottom: 60px; /* Відступ знизу */
+    }
+    
+    .categories__title {
+        margin-top: 0; /* Видаляє верхній відступ */
+        margin-bottom: 32px; /* Відступ знизу */
+        font-size: 48px; /* Розмір шрифту заголовка */
+        line-height: 100%; /* Міжрядковий інтервал */
+        font-weight: bold; /* Жирний шрифт */
+        text-align: center; /* Вирівнювання заголовка по центру */
+        letter-spacing: -1.5px; /* Зменшує відстань між літерами */
+    }
+    /* #endregion */
+    
+    /* #region category /
+    /* Стилі для кожної категорії товарів */
+    .category {
+        display: flex; /* Використання гнучкого контейнера для вирівнювання елементів */
+        align-items: center; /* Вирівнювання елементів по центру вертикально */
+        gap: 3%; /* Відступ між елементами */
+        margin-bottom: 16px; /* Відступ знизу */
+        text-align: justify; /* Вирівнювання тексту по ширині */
+    }
+    
+    .category__photos {
+        display: flex; /* Використання гнучкого контейнера для вирівнювання фото */
+        align-items: center; /* Вирівнювання по центру */
+        gap: 16px; /* Відступ між фото та текстом */
+        flex: 1; /* Рівномірний розподіл простору */
+    }
+    /* #endregion */
+    
+    /* #region header */
+    /* Стилі для хедера */
+    .header {
+        position: sticky; /* Закріплення хедера при скролінгу */
+        display: flex; /* Гнучкий контейнер */
+        flex-direction: column; /* Відображення елементів у стовпчик */
+        justify-content: space-between; /* Розподіл простору між елементами */
+        box-sizing: border-box; /* Урахування padding та border в загальну ширину */
+        height: 100vh; /* Висота на весь екран */
+        padding: 16px 60px; /* Відступи всередині */
+        background-image: url(/images/Header4.png); /* Фонове зображення */
+        background-position: center; /* Вирівнювання фону по центру */
+        background-repeat: no-repeat; /* Заборона повторення фону */
+        background-size: cover; /* Масштабування зображення на весь контейнер */
+    }
+    
+    .header__top {
+        display: flex; /* Вирівнювання логотипу та меню у горизонтальний ряд */
+        justify-content: space-between; /* Рівномірний розподіл елементів */
+    }
+    
+    .header__title {
+        margin-top: 40px; /* Відступ зверху */
+        margin-bottom: 0; /* Відсутність відступу знизу */
+        font-size: 32px; /* Розмір заголовка */
+        text-align: center; /* Вирівнювання по центру */
+        line-height: 100%; /* Висота рядка */
+        font-weight: 800; /* Жирний текст */
+        font-style: italic; /* Курсивний текст */
+        letter-spacing: -1.5px; /* Зменшення відстані між літерами */
+    }
+    /* #endregion */
+    
+    /* #region menu */
+    /* Стилі для бічного меню */
+    .menu {
+        position: fixed; /* Фіксоване розташування меню */
+        top: 0; /* Розташування від верху */
+        right: -280px; /* Спочатку приховане за екраном */
+        width: 280px; /* Ширина меню */
+        height: 100vh; /* Висота на весь екран */
+        box-sizing: border-box; /* Врахування відступів у загальну ширину */
+        padding: 64px 32px; /* Внутрішні відступи */
+        background: rgba(234, 232, 249, 0.1); /* Напівпрозорий фон */
+        backdrop-filter: blur(10px); /* Ефект розмиття фону */
+        transition: right 500ms ease-in-out; /* Плавний ефект відкривання */
+    }
+    
+    .menu:target {
+        right: 0; /* Відображення меню при активації */
+    }
+    /* #endregion */
+    
+    /* #region footer */
+    /* Стилі для футера */
+    .footer {
+        position: sticky; /* Фіксований футер внизу */
+        bottom: 0; /* Вирівнювання по нижньому краю */
+        z-index: -1; /* Відправка футера на задній план */
+        height: 460px; /* Висота футера */
+        background-image: url(/images/Footer.png); /* Фонове зображення */
+        background-position: center; /* Центрування фону */
+        background-repeat: no-repeat; /* Заборона повторення */
+        background-size: cover; /* Покриття всього контейнера */
+    }
+    /* #endregion */
+
+    
